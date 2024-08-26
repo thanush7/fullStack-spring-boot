@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        input{
+            padding: 5px;
+            width: 350px;
+            height: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 450px;
+        }
+        button{
+            width: 100px;
+            border-radius: 5px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>stock entry</h1>
+    <form action="" id="stockForm">
+        <input type="text" id="symbol" placeholder="symbol">
+        <input type="text" id="companyName" placeholder="company name">
+        <input type="text" id="currentPrice" placeholder="current price">
+        <input type="date" id="dates">
+        <button type="submit" id="myBtn" onclick="saveOrUpdate()">Save</button>
+    </form>
+    <h1>Stock List</h1>
+    <table id="stockTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Symbol</th>
+                <th>Company Name</th>
+                <th>Current Price</th>
+                <th>Date</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js">  </script>
+</body>
+
+</html>
